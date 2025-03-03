@@ -23,19 +23,14 @@
           <BaseInput v-model="leyendaData.created_at" label="Fecha de Creación" type="datetime-local" />
           <BaseInput v-model="leyendaData.image_url" label="Imagen (URL)" placeholder="Ingrese la URL de la imagen" />
 
-          <!-- 📌 Nueva sección: Imagen centrada y Descripción debajo -->
           <div class="md:col-span-2 flex flex-col items-center justify-center gap-4">
-            <!-- Imagen centrada -->
             <div class="w-full flex justify-center">
               <BaseImagePreview :src="leyendaData.image_url" class="w-full max-w-md" />
             </div>
-
-            <!-- Descripción debajo de la imagen -->
             <div class="w-full">
               <BaseTextArea v-model="leyendaData.description" label="Descripción" placeholder="Ingrese la descripción" />
             </div>
           </div>
-          <!-- 📌 Fin de la nueva sección -->
 
           <div class="md:col-span-2 flex flex-col sm:flex-row justify-center gap-4 mt-6">
             <BaseButton type="submit" variant="primary">Guardar Cambios</BaseButton>

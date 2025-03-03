@@ -12,7 +12,7 @@
 export default {
   props: {
     type: { type: String, default: "button" },
-    variant: { type: String, default: "primary" }, // Agregado para manejar variantes de colores
+    variant: { type: String, default: "primary" },
     onClick: Function
   },
   computed: {

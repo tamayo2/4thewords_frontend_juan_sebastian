@@ -139,7 +139,7 @@ export default {
 </script>
 
 <style scoped>
-/* Animaciones */
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -160,15 +160,6 @@ export default {
   }
 }
 
-.animate-fade-in {
-  animation: fadeIn 0.5s ease-in-out;
-}
-
-.animate-fade-in-up {
-  animation: fadeInUp 0.5s ease-in-out;
-}
-
-/* Patrones de fondo */
 .pattern-dots {
   background-image: radial-gradient(currentColor 1px, transparent 1px);
 }
